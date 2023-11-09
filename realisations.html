@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style_rea.css">
+        <title>BloomPetals</title>
+    </head>
+    <body>
+        <header>
+            <nav class="first_container">
+                <ul class="item_head">
+                    <li><a id="home" href="index.html">Home</a></li>
+                    <li><a href="entreprise.html">Entreprise</a></li>
+                    <li><a href="realisations.html">Réalisations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="item_flexnav">
+                    <li><input class="searchnav" type="search" placeholder="Not enable...">
+                        <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="close" onclick="closeMenu()">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#3a3a3a}</style><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm79 143c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg></a>
+            </div>
+            <div class="hambgr" onclick="openMenu()">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#3a3a3a}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></a>
+            </div>
+        </header>
+        <script>
+            function openMenu() {
+                document.querySelector(".item_head").classList.add("open")
+                document.querySelector(".close").classList.add("open")
+            }
+            function closeMenu() {
+                document.querySelector(".item_head").classList.remove("open")
+                document.querySelector(".close").classList.remove("open")
+            }
+        </script>
+        <main>
+            <div class="container">
+                <div class="item1">
+                    <article>
+                        <p>
+                            <h2>Créativité Illimitée</h2>Nous repoussons les limites de la créativité pour concevoir des
+                            bouquets uniques et mémorables qui ajoutent une touche magique à votre
+                            événement.
+                        </p>
+                        <p>
+                            <h2>Fleurs Fraîches et Durables</h2>Nous sélectionnons uniquement les fleurs les plus
+                            fraîches et de la plus haute qualité pour garantir la beauté de nos créations du début
+                            à la fin de votre fête.
+                        </p>
+                        <p>
+                            <h2>Service Personnalisé</h2>Notre équipe dévouée est à votre écoute à chaque étape,
+                            offrant un service personnalisé pour répondre à vos besoins spécifiques et surpasser
+                            vos attentes.
+                        </p>
+                        <p>
+                            <h2>Ponctualité et Professionnalisme</h2>Nous sommes fiers de notre ponctualité et de
+                            notre professionnalisme. Nous livrons nos créations à temps et installons chaque
+                            arrangement avec soin et précision.
+                        </p>
+                        <p>
+                            Faites de votre prochain événement un moment inoubliable avec BloomPetals. Laissez-nous
+                            transformer votre espace en un véritable jardin de féerie, où chaque pétale raconte une
+                            histoire d'amour, de bonheur et de célébration.
+                        </p>    
+                    </article>
+                </div>
+                <div class="item2">
+                    <img src="img/i13.jpg" alt="Image-fleur">
+                    <img src="img/i11.jpg" alt="Image-fleur">
+                    <img src="img/i12.jpg" alt="Image-fleur">
+                    <img src="img/i17.jpg" alt="Image-fleur">
+                    <img src="img/i10.jpg" alt="Image-fleur">
+                    <img src="img/i14.jpg" alt="Image-fleur">
+                    <img src="img/i15.jpg" alt="Image-fleur">
+                    <img src="img/i16.jpg" alt="Image-fleur">
+                    <img src="img/i24.jpg" alt="Image-fleur">
+                    <img src="img/i18.jpg" alt="Image-fleur">
+                    <img src="img/i19.jpg" alt="Image-fleur">
+                    <img src="img/i20.jpg" alt="Image-fleur">
+                    <img src="img/i21.jpg" alt="Image-fleur">
+                    <img src="img/i22.jpg" alt="Image-fleur">
+                    <img src="img/i23.jpg" alt="Image-fleur">
+                    <img src="img/i25.jpg" alt="Image-fleur" width="330px">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul class="myfoot">
+                    <li><a href="#home">Revenir en haut de la page</a></li>
+                    <li><a href="index.html">Revenir à la page principale</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>

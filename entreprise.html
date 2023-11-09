@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style_entre.css">
+        <title>BloomPetals</title>
+    </head>
+    <body>
+        <header>
+            <nav class="first_container">
+                <ul class="item_head">
+                    <li><a id="home" href="index.html">Home</a></li>
+                    <li><a href="entreprise.html">Entreprise</a></li>
+                    <li><a href="realisations.html">Réalisations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="item_flexnav">
+                    <li><input class="searchnav" type="search" placeholder="Not enable...">
+                        <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="close" onclick="closeMenu()">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#3a3a3a}</style><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm79 143c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg></a>
+            </div>
+            <div class="hambgr" onclick="openMenu()">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#3a3a3a}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></a>
+            </div>
+        </header>
+        <script>
+            function openMenu() {
+                document.querySelector(".item_head").classList.add("open")
+                document.querySelector(".close").classList.add("open")
+            }
+            function closeMenu() {
+                document.querySelector(".item_head").classList.remove("open")
+                document.querySelector(".close").classList.remove("open")
+            }
+        </script>
+        <main>
+            <div class="container">
+                <div class="txt police">
+                    <p><h1>Notre Engagement</h1>
+                    Nous nous engageons à apporter une touche florale élégante et raffinée à chaque
+                    événement. Chaque bouquet que nous créons est un mélange harmonieux de couleurs
+                    vibrantes, de textures luxuriantes et d'arômes enivrants. Notre équipe expérimentée
+                    collabore étroitement avec vous pour comprendre vos besoins et vos préférences, puis
+                    transforme ces idées en arrangements floraux exceptionnels qui complètent parfaitement
+                    l'ambiance de votre fête.</p>
+                </div>
+                <div class="images slide">
+                    <img src="img/team.png" alt="equipe-de-bloompetals">
+                    <img src="img/client.jpg" alt="employe-et-client 1">
+                    <img src="img/client2.png" alt="employe-et-client 2">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul class="myfoot">
+                    <li><a href="#home">Revenir en haut de la page</a></li>
+                    <li><a href="index.html">Revenir à la page principale</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
